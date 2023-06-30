@@ -1,4 +1,4 @@
 FROM nginx:1.21-alpine
 
-RUN rm /etc/nginx/conf.d/default.conf
-COPY nginx.conf /etc/nginx/conf.d
+RUN rm /app/nginx.conf
+COPY nginx.conf /app/nginx.conf
